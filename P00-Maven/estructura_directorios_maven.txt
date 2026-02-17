@@ -1,0 +1,31 @@
+-- MAVEN 1 --
+.
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── paquete1
+    │   │       ├── Matricula.java
+    │   │       └── Triangulo.java
+    │   └── resources
+    └── test
+        └── java
+            └── paquete1
+                ├── MatriculaTest.java
+                └── TrianguloTest.java
+
+-- MAVEN 2 --
+.
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── paquete2
+    │   │       ├── Matricula.java
+    │   │       └── Triangulo.java
+    │   └── resources
+    └── test
+        └── java
+            └── paquete2
+                ├── MatriculaTest.java
+                └── TrianguloTest.java
