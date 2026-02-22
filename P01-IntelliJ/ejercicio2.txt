@@ -1,0 +1,15 @@
+EJERCICIO 2:
+
+- Comportamientos que pertenecen al conjunto S:
+	(1) dia=29, mes=2, anyo=2000 -> true (bisiesto: div 100 y 400)
+	(2) dia=29, mes=2, anyo=1900 -> false (div 100 pero no 400)
+	(3) dia=31, mes=4, anyo=2024 -> false (abril tiene 30 días)
+
+- Comportamientos que pertenecen al conjunto P:	
+    (1) dia=31, mes=8, anyo=2019 -> false (bug: debería ser true)
+	(2) dia=29, mes=2, anyo=2020 -> true (correcto)
+
+- Comportamientos que pertenecen a T
+   (1) dia=29, mes=2, anyo=2020 -> true
+   (2) dia=31, mes=8, anyo=2019 -> true
+   (3) dia=-2, mes=5, anyo=2019 -> false
