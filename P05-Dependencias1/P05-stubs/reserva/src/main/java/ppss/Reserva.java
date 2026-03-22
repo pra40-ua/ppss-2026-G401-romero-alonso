@@ -1,6 +1,9 @@
 package ppss;
+import ppss.excepciones.IsbnInvalidoException;
+import ppss.excepciones.JDBCException;
+import ppss.excepciones.ReservaException;
+import ppss.excepciones.SocioInvalidoException;
 import java.util.ArrayList;
-
 
 public class Reserva {
 
@@ -15,7 +18,7 @@ public class Reserva {
         if(!compruebaPermisos(login, password, Usuario.BIBLIOTECARIO)) {
             errores.add("ERROR de permisos");
         } else {
-            IOperacionBO io = new Operacion();
+            IOperacionB0 io = FactoriaOperacion.create();
             try{
                 for(String isbn : isbns) {
                     try {
